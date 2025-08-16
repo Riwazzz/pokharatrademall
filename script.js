@@ -72,8 +72,60 @@ const storesData = [
         image: "layout.jpg",
         description: "Computer accessories, mobile devices, and digital solutions for modern life."
     },
-    
-    {}
+    {
+        id: 9,
+        name: "Business Strategy Consulting",
+        floor: "ground",
+        category: "consultancy",
+        contact: "+977 61 123456",
+        image: "layout.jpg",
+        description: "Strategic planning, market analysis, and business development consulting for startups and established companies."
+    },
+    {
+        id: 10,
+        name: "Legal Advisory Services",
+        floor: "ground",
+        category: "consultancy",
+        contact: "+977 61 123457",
+        image: "layout.jpg",
+        description: "Comprehensive legal consultation covering business law, contracts, compliance, and regulatory matters."
+    },
+    {
+        id: 11,
+        name: "Financial Planning & Advisory",
+        floor: "first",
+        category: "consultancy",
+        contact: "+977 61 123458",
+        image: "layout.jpg",
+        description: "Personal and business financial planning, investment strategies, and wealth management consultation."
+    },
+    {
+        id: 12,
+        name: "Marketing & Branding Solutions",
+        floor: "first",
+        category: "consultancy",
+        contact: "+977 61 123459",
+        image: "layout.jpg",
+        description: "Digital marketing strategies, brand development, and promotional campaigns to grow your business."
+    },
+    {
+        id: 13,
+        name: "Technology Solutions Consulting",
+        floor: "second",
+        category: "consultancy",
+        contact: "+977 61 123460",
+        image: "layout.jpg",
+        description: "IT consulting, digital transformation, and technology implementation for modern business needs."
+    },
+    {
+        id: 14,
+        name: "Real Estate Advisory",
+        floor: "second",
+        category: "consultancy",
+        contact: "+977 61 123461",
+        image: "layout.jpg",
+        description: "Property investment guidance, market analysis, and real estate development consultation services."
+    }
 ];
 
 // ======= Store Functions =======
@@ -356,25 +408,8 @@ function initStores() {
             categoryFilter.addEventListener('change', filterStores);
         }
 
-        // Handle "Shop by Category" tiles
-        const categoryTiles = document.querySelectorAll('.store-category-card');
-        if (categoryTiles.length && categoryFilter) {
-            categoryTiles.forEach(tile => {
-                tile.addEventListener('click', () => {
-                    const category = tile.getAttribute('data-category');
-                    // Set the dropdown, then filter and scroll to the grid
-                    categoryFilter.value = category || 'all';
-                    // Reset floor to 'all' to avoid hidden results
-                    const floorFilterEl = document.getElementById('floor-filter');
-                    if (floorFilterEl) floorFilterEl.value = 'all';
-                    filterStores();
-                    const storesSection = document.getElementById('stores');
-                    if (storesSection) {
-                        storesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-        }
+        // Category tiles now navigate to separate pages, so no click handlers needed here
+        // The tiles have href attributes that will handle navigation automatically
         
         // Add pagination button event listeners
         if (prevBtn) {

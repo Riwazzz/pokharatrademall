@@ -53,122 +53,32 @@
                 </div>
 
                 <div class="category-grid">
-                    <a href="#cat-fashion" class="store-category-card" data-category="fashion" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('1.jpg');">
+                    <a href="fashion-stores.html" class="store-category-card" data-category="fashion" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('1.jpg');">
                         <span>Fashion & Clothing</span>
                     </a>
 
-                    <a href="#cat-electronics" class="store-category-card" data-category="electronics" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('1000001886.jpg');">
+                    <a href="electronics-stores.html" class="store-category-card" data-category="electronics" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('1000001886.jpg');">
                         <span>Electronics</span>
                     </a>
 
-                    <a href="#cat-food" class="store-category-card" data-category="food" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('layout.jpg');">
+                    <a href="food-stores.html" class="store-category-card" data-category="food" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('layout.jpg');">
                         <span>Food & Beverages</span>
                     </a>
 
-                    <a href="#cat-beauty" class="store-category-card" data-category="beauty" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('layout.jpg');">
+                    <a href="beauty-stores.html" class="store-category-card" data-category="beauty" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('layout.jpg');">
                         <span>Beauty & Personal Care</span>
                     </a>
 
-                    <a href="#cat-entertainment" class="store-category-card" data-category="entertainment" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('layout.jpg');">
+                    <a href="entertainment-stores.html" class="store-category-card" data-category="entertainment" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('layout.jpg');">
                         <span>Entertainment</span>
+                    </a>
+
+                    <a href="consultancy-stores.html" class="store-category-card" data-category="consultancy" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('layout.jpg');">
+                        <span>Consultancy</span>
                     </a>
                 </div>
             </div>
         </section>
-
-        <!-- Stores grouped by Category -->
-        <section class="category-sections" id="categorySections" aria-label="Stores by Category">
-            <div class="container">
-                <div class="category-section" id="cat-fashion">
-                    <h3>Fashion & Clothing</h3>
-                    <div class="stores-grid category-stores-grid" data-category="fashion"></div>
-                </div>
-
-                <div class="category-section" id="cat-electronics">
-                    <h3>Electronics</h3>
-                    <div class="stores-grid category-stores-grid" data-category="electronics"></div>
-                </div>
-
-                <div class="category-section" id="cat-food">
-                    <h3>Food & Beverages</h3>
-                    <div class="stores-grid category-stores-grid" data-category="food"></div>
-                </div>
-
-                <div class="category-section" id="cat-beauty">
-                    <h3>Beauty & Personal Care</h3>
-                    <div class="stores-grid category-stores-grid" data-category="beauty"></div>
-                </div>
-
-                <div class="category-section" id="cat-entertainment">
-                    <h3>Entertainment</h3>
-                    <div class="stores-grid category-stores-grid" data-category="entertainment"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="stores-section" id="stores">
-            <div class="container">
-                <div class="filters-container">
-                    <div class="filter-group">
-                        <label for="floor-filter">Floor:</label>
-                        <select id="floor-filter" class="filter-select">
-                            <option value="all">All Floors</option>
-                            <option value="ground">Ground Floor</option>
-                            <option value="first">First Floor</option>
-                            <option value="second">Second Floor</option>
-                        </select>
-                    </div>
-                    
-                    <div class="filter-group">
-                        <label for="category-filter">Category:</label>
-                        <select id="category-filter" class="filter-select">
-                            <option value="all">All Categories</option>
-                            <option value="fashion">Fashion & Clothing</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="food">Food & Beverages</option>
-                            <option value="beauty">Beauty & Personal Care</option>
-                            <option value="entertainment">Entertainment</option>
-                        </select>
-                    </div>
-
-                    <div class="filter-group">
-                        <label for="store-search">Search:</label>
-                        <input
-                            type="text"
-                            id="store-search"
-                            class="filter-input"
-                            placeholder="Search by name or description..."
-                            aria-label="Search stores"
-                        />
-                    </div>
-                </div>
-
-                <div class="stores-grid" id="storesGrid">
-                    <!-- Store cards will be populated by JavaScript -->
-                </div>
-                
-                <!-- Pagination -->
-                <div class="pagination-container" id="paginationContainer">
-                    <div class="pagination-info">
-                        <span id="paginationInfo">Showing 1-6 of 70 stores</span>
-                    </div>
-                    <div class="pagination-controls">
-                        <button class="pagination-btn" id="prevBtn" disabled>
-                            <i class="fas fa-chevron-left"></i>
-                            Previous
-                        </button>
-                        <div class="pagination-numbers" id="paginationNumbers">
-                            <!-- Page numbers will be generated by JavaScript -->
-                        </div>
-                        <button class="pagination-btn" id="nextBtn">
-                            Next
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
     <!-- Footer -->
     <footer class="footer">
